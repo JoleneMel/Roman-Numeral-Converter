@@ -33,7 +33,7 @@ function convertToRoman(num) {
     //using a while loop with compound assignment 
     //console.log to track how much is left 
     console.log(`Finished with IV, leftover: ${num}`);
-    while (num >= 0) {
+    while (num >= 1) {
       //Adding an I to the string
       result += "I";
       num -= 1;
