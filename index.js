@@ -1,6 +1,20 @@
 function convertToRoman(num) {
     //defining string 
     let result = "";
+    //with 10 or X
+      while (num >= 10) {
+      result += "X";
+      num -= 10;
+    }
+       //console.log to track how much is left 
+    console.log(`Finished with X, leftover: ${num}`);
+    //This works UNTIL we reach 9 where it is IX
+      while (num >= 9) {
+      result += "IX";
+      num -= 9;
+    }
+       //console.log to track how much is left 
+    console.log(`Finished with IX, leftover: ${num}`);
     //We need to go to the next largest one which is 5
     while (num >= 5) {
       result += "V";
@@ -27,4 +41,4 @@ function convertToRoman(num) {
    return result;
   }
   
-  convertToRoman(36);
+  console.log(convertToRoman(6));
