@@ -1,6 +1,11 @@
 function convertToRoman(num) {
     //defining string 
     let result = "";
+    //with 40 or XL
+    while (num >= 40) {
+    result += "XL";
+    num -= 40;
+  }
     //with 10 or X
       while (num >= 10) {
       result += "X";
