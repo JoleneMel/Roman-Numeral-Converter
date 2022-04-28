@@ -7,6 +7,21 @@
     <title>Roman Numeral Converter FCC, with notes </title>
 </head>
 <body>
+    <h2>The "based" logic</h2>
+    <h3>Or how this problem was broken down, step by step adding a little bit more to the complexity to the problem</h3>
+    <ul>
+        <li>This can seem overwhelming, so we started with the simpliest part, the I, which works up to 4(1 = I, 2 = II, 3 = III)
+            ,I's only = 1 so we only need to take away 1 at a time.
+        </li>
+        <li>Then we had to deal with when I's failed to work, at 4, which is IV, since that has a value of 4 we subtract 4 each time.</li>
+        <li>Then we had to deal with when IV cannot be used at 5 which is V, so repeat the process again subtracting 5 etc.</li>
+        <li>Then we had to deal with when IV cannot be used at 9 which is IX, so repeat the process again subtracting 9 etc.</li>
+        <li>Then we had to deal with when IV cannot be used at 10 which is X, so repeat the process again subtracting 10 etc.</li>
+        <li>Then we had to deal with when IV cannot be used at 5 which is V, so repeat the process again subtracting 5 etc.</li>
+        <li>Then we had to deal with when IV cannot be used at 5 which is V, so repeat the process again subtracting 5 etc.</li>
+        <li>Then we had to deal with when IV cannot be used at 5 which is V, so repeat the process again subtracting 5 etc.</li>
+        <li>Then we had to deal with when IV cannot be used at 5 which is V, so repeat the process again subtracting 5 etc.</li>
+    </ul>
     <script src="index.js"></script>
 </body>
 </html>
